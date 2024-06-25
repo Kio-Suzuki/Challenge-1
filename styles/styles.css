@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 * {
     font-family: 'Poppins';
     font-weight: 400;
@@ -22,10 +30,15 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 34px;
+    font-weight: 700;    
+}
+
 body {
     align-items: center;
     margin: auto;
-    background: #39289F;
+    background-color: #39289F;
     color: white;
 }
 
@@ -92,7 +105,7 @@ h3 {
     margin-bottom: 60px;
 }
 
-img {
+.imagem-joystick {
     position: absolute;
     margin-top: -250px;
     margin-left: 160px;
@@ -134,5 +147,77 @@ img {
     align-items: center;
     color: #39289F;
 }
+
+.button-seall {
+    font-family: 'Rubik';
+    font-size: 20px;
+    color: white;
+    background: #603e9e;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+}
+
+.main-container-2 {
+    width: 78vw;
+    margin: auto;
+    margin-top: 140px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px
+}
+
+.games-trending {
+    object-fit: cover;
+    width: 17vw; 
+    height: 20vw; 
+    border-radius: 25px;    
+}
+
+h5 {
+    font-family: 'Rubik';
+    font-size: 26px;
+    text-align: center;
+}
+
+.section-1 {
+    padding-top: 2vw;
+    width: 40vw;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    line-height: 80px;
+}
+
+.section-2 {
+    width: 78vw;
+    margin: auto; 
+    margin-top: 5vw;
+    line-height: 2vw;
+}
+
+.section-2-2 {
+    width: 50%;
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.imagem-game-destaque {
+    width: 78vw;
+    height: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+
 
 
