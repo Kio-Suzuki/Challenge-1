@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 66px;
+    font-weight: 700;
+}
+
+body {
+    align-items: center;
+    margin: auto;
+    background: #39289F;
+    color: white;
+}
+
+.navbar {
+    width: 90vw;
+    height: 150px;
+    align-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #E87D0E;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    color: white; 
+}
+
+li {
+    margin-left: 110px;   
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: auto;
+    width: 78vw;
+    margin-top: 85px;
+}
+
+.second-container-1 {
+    width: 600px;
+}
+
+h3 {
+    color: #E87D0E;
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.second-container-1 p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+
+img {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 160px;
+    width: 47vw;
+    z-index: -1;
+}
+
+.button-details {
+    border-radius: 50px;
+    border: none;
+    height: 65px;
+    width: 250px;
+    font-size: 18px;
+    background: linear-gradient(to right, #FA8305, #FB9E3C);
+    color: white;
+}
+
+.button-contact {
+    background: #FA9021;
+    border-radius: 10px;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-contact a:hover{
+    background: #fca242;
+    border-radius: 10px;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39289F;
+}
+
+
