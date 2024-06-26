@@ -363,23 +363,38 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 50%;
+    letter-spacing: 3px;
 }
 
 .subcribe-input {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 50%;
 }
 
 .subcribe-input input {
-    width: 50%;
-    height: 20%;
+    width: 60%;
+    height: 24%;
     border-radius: 10px;
     border: none;
     padding-left: 20px;
+    margin-right: 0%;
 }
 
+.button-subscribe {
+    background-color: #DC7000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: -16%;
+    width: 15%;
+    height: 19%;
+}
+
+.button-subscribe:hover{
+    background-color: #eb9e4c;    
+}
 
 /* SECTION FOOTER */
 
@@ -399,24 +414,24 @@ footer {
     padding-bottom: 50px;
 }
 
-.footer-container-1 {
+.footer-item-1 {
     text-align: left;
     width: 50%;
     margin-right: 30px;    
 }
 
-.footer-container-1 h5 {
+.footer-item-1 h5 {
     margin: 0;
     text-align: left;
     font-size: 18px;    
 }
 
-.footer-container-1 ul {
+.footer-item-1 ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-container-2 {
+.footer-item-2 {
     display: flex;
     flex-direction: row; 
     justify-content: space-evenly; 
