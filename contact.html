@@ -65,11 +65,12 @@
             <p>Lorem Ipsum is simply dummy text of the printing.</p>
         </div>
 
-        <form action="">
+        <form>
             <fieldset class="form-name">
                 <div class="campo">
                     <label for="fname">First Name</label>
                     <input type="text" name="fname" id="fname">
+                    <p id="nameError"></p>
                 </div>
                 <div class="campo">
                     <label for="lname">Last Name</label>
@@ -79,15 +80,18 @@
             <fieldset class="form-message">
                 <label for="email">Email Address</label>
                 <input type="email" name="email" id="email">
+                <p id="emailError"></p>
             </fieldset>
 
             <fieldset class="form-message">
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
+                <p id="messageError"></p>
+                <p id="successMessage"></p>
             </fieldset>
 
             <fieldset class="form-button">
-                <button class="button-contact">Get in touch</button>
+                <button type="button" onclick="sendMessage()" class="button-contact">Get in touch</button>
             </fieldset>
             
         </form>
@@ -108,7 +112,8 @@
                 </div>
                 <div class="subcribe-input">
                     <input type="email" name="email" id="email" placeholder="Enter email adress">
-                    <button class="button-subscribe">Continue</button>
+                    <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
+                    <p id="emailError"></p>
                 </div>
             </div>
         </section>

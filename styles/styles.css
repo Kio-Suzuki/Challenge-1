@@ -71,7 +71,7 @@ h6 {
 body {
     align-items: center;
     margin: auto;
-    background-color: #39289F;
+    background: linear-gradient(to bottom, #39289F, #422F9C);
     color: white;
 }
 
@@ -178,6 +178,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     color: #39289F;
+    font-weight: 600;
 }
 
 /* SECTION TRENDING-GAMES */
@@ -300,6 +301,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    
 }
 
 /* SECTION PROJECT */
@@ -326,16 +328,18 @@ a:hover {
 
 .grid-image {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 40px; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+    border: 1px solid red;
+
 }
 
 .img-project {
-    width: 25vw;
     height: 14vw;
     object-fit: cover;
     border-radius: 25px;
+
 }
 
 /* SECTION LOOP */
@@ -511,7 +515,7 @@ footer {
 
 .section-form {
     background-color: #1C140F;
-    height: 100vh;
+    height: 110vh;
     position: relative;
 }
 
@@ -583,3 +587,13 @@ label {
     margin-top: 45px;
 }
 
+
+#nameError, #emailError, #messageError {
+    font-size: 12px;
+    color: red;
+}
+
+#successMessage {
+    font-size: 16px;
+    color: rgb(21, 184, 21);
+}
