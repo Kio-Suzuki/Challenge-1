@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style-fonts.css">
+    <link rel="stylesheet" href="/styles/style-header.css">
+    <link rel="stylesheet" href="/styles/style-home.css">
+    <link rel="stylesheet" href="/styles/style-section-trending.css">
+    <link rel="stylesheet" href="/styles/style-section-development.css">
+    <link rel="stylesheet" href="/styles/style-section-projects.css">
+    
+    <link rel="stylesheet" href="/styles/style-footer.css">
     <title>Challenge - 1</title>
 </head>
 <body>
@@ -32,8 +39,8 @@
                 <button class="button-details">Get more details</button>
             </div>
             <div class="intro-item-2">
-                <img class="imagem-joystick" src="/assets/images/joystick.png" alt="Joystick">
-                <img src="/assets/images/engines.svg" alt="engine unity, engine cryengine, engine unreal">
+                <img id="image-joystick" src="/assets/images/joystick.png" alt="Joystick">
+                <img id="image-engines" src="/assets/images/engines.svg" alt="engine unity, engine cryengine, engine unreal">
             </div>
         </section>
 
@@ -45,19 +52,19 @@
             <div class="trending-games-item">
                 <div class="imagem-games">
                     <img class="games-trending" src="/assets/images/game-for-honor2.jpg" alt="Game For Honor box-art">
-                    <h5>40 Followers</h5>
+                    <h5><img class="fire-icon" src="/assets/images/fire.svg" alt="Fire icon"></span>40 Followers</h5>
                 </div>
                 <div class="imagem-games">
-                    <img class="games-trending" src="/assets/images/elden-ring.jpg" alt="Game Elden ring box-art">
-                    <h5>40 Followers</h5>
+                    <img class="games-trending" src="/assets/images/game-lol.jpg" alt="Lol character Akali">
+                    <h5><img class="fire-icon" src="/assets/images/fire.svg" alt="Fire icon">40 Followers</h5>
                 </div>
                 <div class="imagem-games">
                     <img class="games-trending" src="/assets/images/game-crysis.jpg" alt="Game Crysis box-art">
-                    <h5>40 Followers</h5>
+                    <h5><img class="fire-icon" src="/assets/images/fire.svg" alt="Fire icon">40 Followers</h5>
                 </div>
                 <div class="imagem-games">
                     <img class="games-trending" src="/assets/images/game-stray.jpg" alt="Game Stray box-art">
-                    <h5>40 Followers</h5>
+                    <h5><img class="fire-icon" src="/assets/images/fire.svg" alt="Fire icon">40 Followers</h5>
                 </div> 
             </div>
         </section>
@@ -118,22 +125,17 @@
     </section>
 
     <section class="project">
-        <div>
+        <div class="project-container-text">
             <h3 class="bold">Our Recent Projects</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-        <div>
-            <div class="grid-image">
-                <img class="img-project" src="/assets/images/project-1.jpg" alt="">
-                <img class="img-project" src="/assets/images/project-2.jpg" alt="">
-                <img class="img-project" src="/assets/images/project-3.png" alt="">
-                <img class="img-project" src="/assets/images/project-4-1.png" alt="">
-                <img class="img-project" src="/assets/images/project-5-2.jpeg" alt="">
-                <img class="img-project" src="/assets/images/project-6-2.png" alt="">
-            </div>
-            <div class="grid-image">
-                
-            </div>
+        <div class="grid">
+            <div class="grid-item"><img src="/assets/images/project-1.jpg" alt=""></div>
+            <div class="grid-item"><img src="/assets/images/project-2.jpg" alt=""></div>
+            <div class="grid-item"><img src="/assets/images/project-3.png" alt=""></div>
+            <div class="grid-item"><img src="/assets/images/project-4-1.png" alt=""></div>
+            <div class="grid-item"><img src="/assets/images/project-5-2.jpeg" alt=""></div>
+            <div class="grid-item"> <img src="/assets/images/project-6-2.png" alt=""></div>
         </div>
         <div class="project-container-button">
             <button class="button-seall">SEE ALL</button>
@@ -141,6 +143,7 @@
     </section>
 
     <section class="loop">
+
         <div class="loop-item">
             <h3 class="semibold">Lorem Ipsum</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -153,8 +156,8 @@
             </div>
             <div class="subcribe-input">
                 <input type="email" name="email" id="email" placeholder="Enter email adress">
-                <p id="emailError"></p>
                 <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
+                <p id="emailError"></p>
             </div>
         </div>
     </section>

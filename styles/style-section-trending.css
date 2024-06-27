@@ -1,0 +1,39 @@
+.trending-games {
+    width: 78vw;
+    margin: auto;
+    margin-top: 140px;
+}
+
+.trending-games-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px
+}
+
+.games-trending {
+    object-fit: cover;
+    width: 17vw; 
+    height: 20vw; 
+    border-radius: 25px;    
+}
+
+.button-seall {
+    font-family: 'Rubik';
+    font-size: 20px;
+    color: white;
+    background: #603e9e;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+}
+
+.button-seall:hover{
+    background: #6d50a1;    
+}
+
+.fire-icon {
+    margin-right: 5%;
+}

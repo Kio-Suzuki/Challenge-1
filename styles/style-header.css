@@ -1,0 +1,36 @@
+header {
+    width: 90vw;
+    height: 8vw;
+    align-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.3em;
+    color: white; 
+}
+
+header li {
+    margin-left: 5.5rem;   
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #E87D0E;
+}

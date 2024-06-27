@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/style-fonts.css">
+    <link rel="stylesheet" href="/styles/style-header.css">
+    <link rel="stylesheet" href="/styles/style-contact.css">
+    <link rel="stylesheet" href="/styles/style-section-form.css">
+    <link rel="stylesheet" href="/styles/style-section-subscribe.css">
+    <link rel="stylesheet" href="/styles/style-footer.css">
     <title>Contact us</title>
 </head>
 <body class="contact-page">
@@ -32,14 +37,19 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </section>
     
-            <section>
-                <img src="/assets/images/world-map.svg" alt="">
+            <section id="world-map">
+                <img src="/assets/images/world-map.svg" width="100%" alt="World map">
             </section>
     
             <section class="contact-main-item-2">
                 <div class="contact-item-1">
                     <p>Follow us</p>
-    
+                    <div class="contact-socials">
+                        <a href="https://www.facebook.com"><div class="circle-2 color-circle"><img src="/assets/images/facebook-w.svg" alt="Facebook"></div></a>
+                        <a href="https://www.instagram.com/"><div class="circle-2 color-circle"><img src="/assets/images/instagram-w.svg" alt="Instagram"></div></a>
+                        <a href="https://x.com/home"><div class="circle-2 color-circle"><img src="/assets/images/twitter-w.svg" alt="Twitter"></div></a>
+                        <a href="https://www.linkedin.com/"><div class="circle-2 color-circle"><img src="/assets/images/linkedin-w.svg" alt="Linkedin"></div></a>
+                    </div>
                 </div>
                 <div class="contact-item-2">
                     <img src="/assets/images/phone.svg" alt="">
@@ -47,15 +57,13 @@
                 </div>
                 <div class="contact-item-3">
                     <img src="/assets/images/gps.svg" alt="">
-                    <p>but also the leap into electronic 
-                        typesetting</p>
+                    <p>but also the leap into electronic typesetting</p>
                 </div>
             </section>
     
         </main>
     </div>
     
-
     <section class="section-form">
         <img id="vector1" src="/assets/images/Vector1.svg" alt="">
         <img id="vector2" src="/assets/images/Vector2.svg" alt="">
@@ -70,7 +78,7 @@
                 <div class="campo">
                     <label for="fname">First Name</label>
                     <input type="text" name="fname" id="fname">
-                    <p id="nameError"></p>
+                    <p id="nameError" class="validationError"></p>
                 </div>
                 <div class="campo">
                     <label for="lname">Last Name</label>
@@ -80,13 +88,13 @@
             <fieldset class="form-message">
                 <label for="email">Email Address</label>
                 <input type="email" name="email" id="email">
-                <p id="emailError"></p>
+                <p id="emailError" class="validationError"></p>
             </fieldset>
 
             <fieldset class="form-message">
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
-                <p id="messageError"></p>
+                <p id="messageError" class="validationError"></p>
                 <p id="successMessage"></p>
             </fieldset>
 
@@ -105,12 +113,12 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
            
-            <div class="subcribe-area">
-                <div class="subcribe-item">
+            <div class="subscribe-area">
+                <div class="subscribe-item">
                     <h3>Stay in the loop</h3>
                     <p>Subscribe to receive the latest news and updates about TDA. <br>We promise not to spam you! </p>
                 </div>
-                <div class="subcribe-input">
+                <div class="subscribe-input">
                     <input type="email" name="email" id="email" placeholder="Enter email adress">
                     <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
                     <p id="emailError"></p>

@@ -1,0 +1,78 @@
+.contact-main {
+    text-align: center;
+    width: 78vw;
+    margin: auto;
+    margin-top: 4%;
+    padding-bottom: 7em;
+}
+
+.contact-background {
+    background: linear-gradient(to bottom, #2211E7, #383837);
+    background-repeat: no-repeat;
+}
+
+.contact-main-item {
+    margin-bottom: 7%;
+}
+
+#world-map {
+    margin-bottom: 5em;
+}
+
+.contact-main-item h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contact-main-item-2 {
+    display: flex;
+    flex-direction: row;
+    height: 8em;
+    padding: 2vh;
+    justify-content: space-around;
+}
+
+.contact-item-1 {
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 2vh;
+    text-align: start;
+    width: 30%;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 1em;
+}
+
+.contact-item-2 {
+    display: flex; 
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 2vh;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-2 img, .contact-item-3 img {
+    width: 2em;
+    margin-right: 1.5em;
+}
+
+.contact-item-2 p, .contact-item-3 p {
+    font-size: 1.2em;
+}
+
+.contact-item-3 {
+    display: flex;
+    padding: 2vh;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 5em;
+}
+
+.color-circle {
+    background: #1C140F !important;
+}
+

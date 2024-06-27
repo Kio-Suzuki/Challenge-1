@@ -1,0 +1,50 @@
+.project {
+    width: 78vw;
+    height: 98vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 8vw;
+}
+
+.project-container-button {
+    margin-top: 100px;
+}
+
+.project-container-text {
+    width: 40%;
+    margin: auto;
+}
+
+.grid {
+    margin: 5% 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.grid-item {
+    height: 25vh;
+    flex-grow: 1;    
+}
+
+.grid-item img {
+    min-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
