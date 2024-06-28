@@ -31,7 +31,7 @@
     border-radius: 10px;
     height: 3em;
     color: white;
-    font-size: 22px;
+    font-size: 1em;
     resize: none;
 }
 
@@ -41,7 +41,9 @@
 
 label {
     color: #4F4F4F;
+    margin-bottom: 0.5em;
 }
+
 
 .form-name {
     border: 0;
@@ -58,6 +60,7 @@ label {
 
 .campo {
     width: 48%;
+    height: auto;
 }
 
 #message {

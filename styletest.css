@@ -15,32 +15,30 @@ body {
 
 .box {
     position: relative;
-    width: 400px;
-    height: 400px;
-    background: rgba(0,0,0,0.5);
+    width: 10em;
+    height: 10em;
+    background: transparent;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.box::before{
+.box::before {
     content: '';
     position: absolute;
-    inset: -10px 140px;
+    inset: -1em 3em;
     background: linear-gradient(315deg,#00ccff,#d400d4);
-    transition: 0.5;
     animation: animate 4s linear infinite;
 }
 
-.box:hover::before{
+.box:hover::before {
     inset: -20px 0px;
 }
+
 @keyframes animate {
-    0% 
-    {
+    0% {
         transform: rotate(0deg);
     }
-    0% 
-    {
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -57,7 +55,39 @@ body {
 .content {
     position: absolute;
     inset: 30px;
-    border: 6px solid #070a1c;
+    border: 6px solid #ffffff;
     z-index: 3;
     border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.development-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.development-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.content-text {
+    padding-top: 1em;
+    font-size: 1.2em;
 }

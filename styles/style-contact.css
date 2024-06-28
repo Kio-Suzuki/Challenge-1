@@ -76,3 +76,11 @@
     background: #1C140F !important;
 }
 
+.color-circle:hover {
+    background: #E87D0E !important;
+}
+
+.orange-color {
+    color: #E87D0E;
+}
+
