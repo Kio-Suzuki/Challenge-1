@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to bottom, #2211E7, #383837);
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 78vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    margin-top: 3em;
+}
+
+.text {
+    position: absolute;
+    font-size: 1.5em;
+    top: 50%;
+    left: 30%;
+    transform: rotate(-18deg) skew(6deg);  
+}
+
+.text p {
+    font-family: 'DancingScript';
+    color: black;
+}
+

@@ -39,44 +39,6 @@ body {
     z-index: -1;    
 }
 
-.button-details {
-    border-radius: 50px;
-    border: none;
-    height: 9%;
-    width: 40%;
-    font-size: 18px;
-    background: linear-gradient(to right, #FA8305, #FB9E3C);
-    color: white;
-}
-
-.button-contact {
-    background: #FA9021;
-    border-radius: 10px;
-    width: 150px;
-    height: 48px;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: none;
-}
-
-.button-contact a:hover{
-    background: #fca242;
-    border-radius: 10px;
-    width: 150px;
-    height: 48px;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #39289F;
-    font-weight: 600;
-}
-
 .recommended {
     width: 78vw;
     margin: auto;
@@ -102,11 +64,6 @@ body {
     margin-top: 3vw;
     margin-bottom: 10vw;
 }
-
-
-
-
-
 
 
 
@@ -163,17 +120,5 @@ body {
 
 }
 
-.button-subscribe {
-    background-color: #DC7000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: -16%;
-    width: 15%;
-    height: 19%;
-}
 
-.button-subscribe:hover{
-    background-color: #eb9e4c;    
-}
 

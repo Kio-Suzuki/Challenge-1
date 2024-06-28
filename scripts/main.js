@@ -9,6 +9,7 @@
 
 */ 
 
+
 function sendMessage() {
 
     let firstName = document.getElementById('fname')
@@ -28,13 +29,32 @@ function sendMessage() {
         messageError.innerHTML = 'O campo de Message deve ter pelo menos 10 caracteres'
     } else {
         localStorage.setItem('firstName', firstName.value)
-        localStorage.setItem('lasttName', lastName.value)
+        localStorage.setItem('lastName', lastName.value)
         localStorage.setItem('email', email.value) 
         localStorage.setItem('message', message.value) 
         successMessage.innerHTML = 'Sua mensagem foi enviada com sucesso!' 
-        clearInputs() 
+        clearInputs()
+        window.location.href = 'message.html'
     }
 }
+
+window.onload = read;
+
+function read() {
+    let fullName = document.getElementById('full-name')
+    let userEmail = document.getElementById('user-email')
+    let userMessage = document.getElementById('user-message')
+
+    let firstName = localStorage.getItem('firstName');
+    let lastName = localStorage.getItem('lastName');
+    let email = localStorage.getItem('email');
+    let message = localStorage.getItem('message');
+
+    fullName.textContent = `${firstName} ${lastName}`;
+    userEmail.textContent = email;
+    userMessage.textContent = message;
+}
+
 
 function nameValidator(name) {
     let validator = /^[A-Za-zÀ-ÖØ-öø-ÿ]+$/;

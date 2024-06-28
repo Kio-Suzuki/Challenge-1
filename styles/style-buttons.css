@@ -1,0 +1,74 @@
+.button-contact {
+    background: #FA9021;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.button-contact a:hover{
+    background: #fca242;
+    border-radius: 10px;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #39289F;
+    font-weight: 600;
+}
+
+.button-details {
+    border-radius: 50px;
+    border: none;
+    height: 9%;
+    width: 40%;
+    font-size: 18px;
+    background: linear-gradient(to right, #FA8305, #FB9E3C);
+    color: white;
+    cursor: pointer;
+}
+
+.button-details:hover{
+    color: #39289F;
+    cursor: pointer;
+}
+
+.button-seall {
+    font-family: 'Rubik';
+    font-size: 20px;
+    color: white;
+    background: #603e9e;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.button-seall:hover{
+    background: #6d50a1;    
+}
+
+.button-subscribe {
+    background-color: #DC7000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: -16%;
+    width: 15%;
+    height: 19%;
+}
+
+.button-subscribe:hover{
+    background-color: #eb9e4c;    
+}
+
