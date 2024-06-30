@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 2em;
     width: 78vw;
     margin: 5em auto;
     
@@ -53,7 +53,7 @@
     position: absolute;
     inset: -1em 3em;
     background: linear-gradient(315deg,#00ccff,#d400d4);
-    animation: animate 4s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
 .box:hover::before {
@@ -76,6 +76,7 @@
     background: #171818;
     border-radius: 50%;
     z-index: 1;
+    
 }
 
 .content {

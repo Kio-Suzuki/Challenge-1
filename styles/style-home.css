@@ -27,8 +27,8 @@ body {
 #image-joystick {
     position: absolute;
     top: 0;
-    left: 64em;
-    width: 45vw;
+    left: 62em;
+    width: 50%;
     z-index: -1;
 }
 

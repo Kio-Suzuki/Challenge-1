@@ -1,44 +1,77 @@
-.loop {
+#subscribe {
     width: 78vw;
     height: 70vh;
     margin: auto;  
-    padding-top: 5vw;    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-bottom: 5vh;
 }
 
-.loop-item {
+.subscribe-title {
     width: 40%;
-    margin-bottom: 3vw;
-    
+    height: 35%;
+    align-items: center;
 }
 
 .subscribe-area {
-    background-color: #1C140F;
-    border-radius: 15px;
-    height: 20vh;
+    background: #1C140F;  
+    border-radius: 1em;
+    width: 100%;
+    height: 35%;
     display: flex;
     flex-direction: row;
-    padding: 1.5vw 2vw 1.5vw 3vw;
-}
-
-.subscribe-item {
     justify-content: center;
     align-items: center;
-    width: 50%;
-    letter-spacing: 3px;
 }
 
-.subscribe-input {
+.sub-title {
+    width: 43%;
+    height: 75%;
+    letter-spacing: 0.15em;
+}
+
+.sub-form {
+    width: 47%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sub-form input{
+    width: 30em;
+    height: 3em;
+    border-radius: 0.5em;
+    padding-left: 1em;
+    position: relative;
+}
+
+.form-input {
+    width: 80%;
+    height: 65%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 50%;
+    align-items: flex-end;
+    position: relative;
 }
 
-.subscribe-input input {
-    width: 60%;
-    height: 24%;
-    border-radius: 10px;
-    border: none;
-    padding-left: 20px;
-    margin-right: 0%;
+.form-error {
+    width: 80%;
+    height: 35%; 
+    text-align: center; 
+}
+
+#emailError {
+    font-size: 0.8em;
+    height: 1em;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
 }

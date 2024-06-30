@@ -100,23 +100,25 @@
     </section>
 
     <div class="contact-background">
-        <section class="loop">
-
-            <div class="loop-item">
-                <h3 class="semibold">Lorem Ipsum</h3>
+        <section id="subscribe">
+            <div class="subscribe-title">
+                <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-           
             <div class="subscribe-area">
-                <div class="subscribe-item">
+                <div class="sub-title">
                     <h3>Stay in the loop</h3>
-                    <p>Subscribe to receive the latest news and updates about TDA. <br>We promise not to spam you! </p>
-                </div>
-                <div class="subscribe-input">
-                    <input type="email" name="email" id="email" placeholder="Enter email adress" required>
-                    <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
-                    <p id="emailError"></p>
-                </div>
+                    <p>Subscribe to receive the latest news and updates about TDA.<br> We promise not to spam you! </p>
+                </div> 
+                <div class="sub-form">
+                    <div class="form-input">
+                        <input type="email" name="email" id="email" placeholder="Enter email adress" required>
+                        <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
+                    </div>
+                    <div class="form-error">
+                        <p id="emailError" ></p>
+                    </div>
+                </div>   
             </div>
         </section>
     </div>

@@ -63,9 +63,11 @@
     color: white;
     border: none;
     border-radius: 0.5em;
-    margin-left: -16%;
-    width: 15%;
-    height: 19%;
+    top: 5.2em;
+    right: 0.5em;
+    width: 8em;
+    height: 2.6em;
+    position: absolute;
 }
 
 .button-subscribe:hover{
