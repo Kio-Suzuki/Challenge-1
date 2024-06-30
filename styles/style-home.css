@@ -2,7 +2,8 @@ body {
     align-items: center;
     margin: auto;
     background: linear-gradient(to bottom, #39289F, #422F9C);
-    color: white;   
+    color: white;
+    overflow-x: hidden;
 }
 
 .intro {
@@ -28,7 +29,7 @@ body {
     position: absolute;
     top: 0;
     left: 62em;
-    width: 50%;
+    width: 48%;
     z-index: -1;
 }
 
@@ -43,6 +44,7 @@ body {
 .recommended {
     width: 78vw;
     margin: auto;
+    position: relative;
 }
 
 .recommended-title {
@@ -59,9 +61,16 @@ body {
     margin-top: 2vh; 
 }
 
-.imagem-game-recommended {
+.image-game-recommended {
     width: 78vw;
     height: auto;
     margin-top: 3vw;
     margin-bottom: 10vw;
+}
+
+.bg-game-recommended {
+    position: absolute;
+    z-index: -1;
+    top: 21.5em;
+    right: 10em;
 }
