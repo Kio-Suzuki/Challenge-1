@@ -1,13 +1,11 @@
 ;(function() {
     "use strict";
   
-    // General
     var canvas,
       screen,
       gameSize,
       game;
   
-    // Assets
     var invaderCanvas,
       invaderMultiplier,
       invaderSize = 20,
@@ -16,14 +14,12 @@
       invaderSpeed,
       invaderSpawnDelay = 250;
   
-    // Counter
     var i = 0,
       kills = 0,
       spawnDelayCounter = invaderSpawnDelay;
   
     var invaderDownTimer;
   
-    // Text
     var blocks = [
       [3, 4, 8, 9, 10, 15, 16],
       [2, 4, 7, 11, 14, 16],
@@ -33,8 +29,6 @@
       [4, 8, 9, 10, 16]
     ];
   
-    // Game Controller
-    // ---------------
     var Game = function() {
   
       this.level = -1;
@@ -55,7 +49,6 @@
     Game.prototype = {
       update: function() {
   
-        // Next level
         if (game.invaders.length === 0) {
   
           spawnDelayCounter += 1;
@@ -73,7 +66,6 @@
   
         if (!this.lost) {
   
-          // Collision
           game.player.projectile.forEach(function(projectile) {
             game.invaders.forEach(function(invader) {
               if (collides(projectile, invader)) {
@@ -93,7 +85,6 @@
   
         }
   
-        // Don't stop player & projectiles.. they look nice
         game.player.update();
         for (i = 0; i < game.invaderShots.length; i++) game.invaderShots[i].update();
   
@@ -144,9 +135,7 @@
       }
   
     };
-  
-    // Invaders
-    // --------
+
     var Invader = function(coordinates) {
       this.active = true;
       this.coordinates = coordinates;
@@ -201,8 +190,6 @@
   
     };
   
-    // Player
-    // ------
     var Player = function() {
       this.active = true;
       this.size = {
@@ -268,8 +255,6 @@
       }
     };
   
-    // Projectile
-    // ------
     var Projectile = function(coordinates, velocity) {
       this.active = true;
       this.coordinates = coordinates;
@@ -293,9 +278,7 @@
   
       }
     };
-  
-    // Keyboard input tracking
-    // -----------------------
+
     var KeyController = function() {
       this.KEYS = {
         LEFT: 37,
@@ -329,8 +312,6 @@
   
     };
   
-    // Other functions
-    // ---------------
     function collides(a, b) {
       return a.coordinates.x < b.coordinates.x + b.size.width &&
         a.coordinates.x + a.size.width > b.coordinates.x &&
@@ -351,8 +332,6 @@
       return textRow;
     }
   
-    // Write Text
-    // -----------
     function createInvaders() {
       var invaders = [];
   
@@ -368,9 +347,7 @@
       }
       return invaders;
     }
-  
-    // Start game
-    // ----------
+
     window.addEventListener('load', function() {
   
       var invaderAsset = new Image;
@@ -381,7 +358,6 @@
         invaderCanvas.height = invaderSize;
         invaderCanvas.getContext("2d").drawImage(invaderAsset, 0, 0);
   
-        // Game Creation
         canvas = document.getElementById("space-invaders");
         screen = canvas.getContext('2d');
   
