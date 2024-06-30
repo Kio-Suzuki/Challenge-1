@@ -1,10 +1,10 @@
 .button-contact {
     background: #FA9021;
     border: none;
-    border-radius: 10px;
-    width: 150px;
-    height: 48px;
-    font-size: 16px;
+    border-radius: 0.6em; 
+    width: 8vw;
+    height: 5vh; 
+    font-size: 1rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -14,10 +14,10 @@
 
 .button-contact a:hover{
     background: #fca242;
-    border-radius: 10px;
-    width: 150px;
-    height: 48px;
-    font-size: 16px;
+    border-radius: 0.6em; 
+    width: 8vw;
+    height: 5vh;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -27,11 +27,11 @@
 }
 
 .button-details {
-    border-radius: 50px;
+    border-radius: 2em;
     border: none;
-    height: 9%;
-    width: 40%;
-    font-size: 18px;
+    width: 13vw; 
+    height: 7vh; 
+    font-size: 1.2em;
     background: linear-gradient(to right, #FA8305, #FB9E3C);
     color: white;
     cursor: pointer;
@@ -44,13 +44,13 @@
 
 .button-seall {
     font-family: 'Rubik';
-    font-size: 20px;
+    font-size: 1.2em;
     color: white;
     background: #603e9e;
     border: none;
-    border-radius: 10px;
-    width: 150px;
-    height: 60px;
+    border-radius: 0.5em;
+    width: 8vw;
+    height: 6vh;
     cursor: pointer;
 }
 
@@ -62,7 +62,7 @@
     background-color: #DC7000;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5em;
     margin-left: -16%;
     width: 15%;
     height: 19%;

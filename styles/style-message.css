@@ -12,16 +12,64 @@ main {
     margin-top: 3em;
 }
 
-.text {
-    position: absolute;
-    font-size: 1.5em;
-    top: 50%;
-    left: 30%;
-    transform: rotate(-18deg) skew(6deg);  
+.main-title {
+    width: 55%;
+    margin: 10em auto;
+    text-align: center;
+    font-weight: 400;
 }
 
-.text p {
+.main-title h1 {
+    font-size: 2em;    
+}
+
+.bg-image {
+    position: relative;
+}
+
+
+.text-style h4 {
     font-family: 'DancingScript';
+    font-size: 1.5em;
+    color: black;
+    position: absolute;
+    font-size: 1.5em;
+    top: 40%;
+    left: 25%;
+    transform: rotate(-12deg) skew(10deg);      
+}
+
+.text-style-reward {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: rotate(-12deg) skew(10deg);       
+}
+
+.text-style-name {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: rotate(-15deg) skew(10deg);      
+}
+
+.text-style-email {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: rotate(-19deg) skew(10deg);      
+}
+
+.text-style-message {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: rotate(-20deg) skew(10deg);      
+}
+
+.text-style-name p, .text-style-email p, .text-style-message p, .text-style-reward p{
+    font-family: 'DancingScript';
+    font-size: 1.5em;
     color: black;
 }
 
