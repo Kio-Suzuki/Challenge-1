@@ -46,6 +46,7 @@
     border-radius: 0.5em;
     padding-left: 1em;
     position: relative;
+    border: none;
 }
 
 .form-input {

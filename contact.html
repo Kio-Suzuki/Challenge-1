@@ -76,22 +76,22 @@
             <fieldset class="name">
                 <div class="form-item">
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" id="fname">
+                    <input type="text" name="fname" id="fname" required>
                     <p id="name-error"></p>
                 </div>
                 <div class="form-item">
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname" id="lname">
+                    <input type="text" name="lname" id="lname" required>
                 </div>
             </fieldset >
                
             <fieldset class='data'>
                 <div class="form-item-2">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                     <p id="email-error"></p>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea> 
+                    <textarea name="message" id="message" required></textarea> 
                     <p id="message-error"></p>
                     <button type="button" onclick="sendMessage()" class="button-contact">Get in Touch</button>
                 </div>
@@ -112,7 +112,7 @@
                 </div> 
                 <div class="sub-form">
                     <div class="form-input">
-                        <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                        <input type="email" name="email" id="subscribeEmail" placeholder="Enter email address" required>
                         <button type="button" onclick="subscribe()" class="button-subscribe">Continue</button>
                     </div>
                     <div class="form-error">

@@ -1,11 +1,23 @@
 let userList = JSON.parse(localStorage.getItem('userList')) || [];
 let id = userList.length > 0 ? userList[userList.length - 1].id + 1 : 1; 
 
+let subscriberList = JSON.parse(localStorage.getItem('subscriberList')) || []
+let subId = 1; 
+
+
 function createUser(firstName, lastName, email, message) {
     let newUser = { id: id++, firstName: firstName, lastName: lastName, email: email, message: message };
     userList.push(newUser);
     localStorage.setItem('userList', JSON.stringify(userList));
 }
+
+
+function createSubscriber(email) {
+    let newSubscriber = {subId: subId++, email: email}
+    subscriberList.push(newSubscriber)
+    localStorage.setItem('subscriberList', JSON.stringify(subscriberList))
+}
+
 
 function sendMessage() {
     let firstName = document.getElementById('fname').value.trim();
@@ -24,14 +36,23 @@ function sendMessage() {
 
     if (!nameValidator(firstName) || !nameValidator(lastName)) {
         nameError.innerHTML = 'Invalid name, only letters allowed';
+        setTimeout(() => {
+            nameError.innerHTML = ''
+        },3000)
         isValid = false;
     }
     if (!emailValidator(email)) {
         emailError.innerHTML = 'Please enter a valid email address';
+        setTimeout(() => {
+            emailError.innerHTML = ''
+        },3000)
         isValid = false;
     }
     if (message.length < 10) {
         messageError.innerHTML = 'Your message must be at least 10 characters long';
+        setTimeout(() => {
+            messageError.innerHTML = ''
+        },3000)
         isValid = false;
     }
 
@@ -93,7 +114,7 @@ function clearInputs() {
 }
 
 function subscribe() {
-    let email = document.getElementById('email');
+    let email = document.getElementById('subscribeEmail');
     let emailError = document.getElementById('emailError')
 
     if(email.value.length == 0) {
@@ -111,7 +132,7 @@ function subscribe() {
             emailError.innerHTML = ''
         },3000)
     } else {
-        localStorage.setItem('email-subscribe', email.value);
+        createSubscriber(email.value)
         email.value = ''
         emailError.innerHTML = 'Your email has been successfully registered'
         emailError.classList.add('success-message');
