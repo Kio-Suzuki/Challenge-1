@@ -47,8 +47,8 @@ main {
 
 .text-style-name {
     position: absolute;
-    top: 50%;
-    left: 30%;
+    top: 51%;
+    left: 29%;
     transform: rotate(-15deg) skew(10deg);      
 }
 

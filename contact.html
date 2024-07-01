@@ -72,7 +72,7 @@
             <h2>Say Hello</h2>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
         </div>
-        <form>
+        <form id="myForm">
             <fieldset class="name">
                 <div class="form-item">
                     <label for="fname">First Name</label>
@@ -93,7 +93,7 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" required></textarea> 
                     <p id="message-error"></p>
-                    <button type="button" onclick="sendMessage()" class="button-contact to-right">Get in Touch</button>
+                    <button id="submitButton" type="button" onclick="sendMessage()" class="button-contact to-right">Get in Touch</button>
                 </div>
             </fieldset>
         </form>
