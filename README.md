@@ -1,2 +1,4 @@
-# Challenge-1
-This repository contains the code for the first challenge of my internship. The task is to create a web page using HTML, CSS, and JavaScript. The project aims to demonstrate proficiency in front-end development by building a interactive web page.
+# Fictitious Game Store Website
+
+## Project Description
+This project was developed as part of an internship challenge, which consisted of recreating two pages of a website for a fictitious game store. The main objective was to stay true to the original design using HTML, CSS, and JavaScript.
