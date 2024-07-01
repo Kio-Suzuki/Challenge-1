@@ -64,3 +64,7 @@
 .game-title:hover > *{
     transform:translateY(0px)
 }
+
+.separator {
+    color: #E87D0E;
+}
