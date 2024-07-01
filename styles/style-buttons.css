@@ -41,31 +41,29 @@
 }
 
 .button-details {
+    background: linear-gradient(to right, #FA8305, #FB9E3C);
     border-radius: 2em;
     border: none;
-    width: 13vw; 
-    height: 7vh; 
     font-size: 1.2em;
-    background: linear-gradient(to right, #FA8305, #FB9E3C);
+    padding: 1em 2em;
     color: white;
     cursor: pointer;
 }
 
 .button-details:hover{
-    color: #39289F;
-    font-weight: 600;
+    background: #FB9E3C;
     cursor: pointer;
 }
 
 .button-seall {
     font-family: 'Rubik';
     font-size: 1.2em;
-    color: white;
     background: #603e9e;
+    color: white;
+    text-align: center;
     border: none;
     border-radius: 0.5em;
-    width: 8vw;
-    height: 6vh;
+    padding: 0.8em 2em;
     cursor: pointer;
 }
 
