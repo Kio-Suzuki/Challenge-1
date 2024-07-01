@@ -31,14 +31,13 @@ a {
     color: white;
 }
 
-a:hover {
+li a:hover {
     color: #E87D0E;    
 }
 
 .effect-link {
    text-decoration: none;
    position: relative; 
-     
 }
 
 .effect-link::after{
@@ -59,4 +58,3 @@ a:hover {
     transform: scaleX(1);
     transform-origin: left;
 }
-
