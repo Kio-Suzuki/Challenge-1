@@ -71,6 +71,7 @@ function emailValidator(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
+
 function clearInputs() {
     document.getElementById('fname').value = ''
     document.getElementById('lname').value = ''
@@ -111,6 +112,7 @@ function subscribe() {
     }
 }
 
+
 function read() {
     let fullName = document.getElementById('full-name')
     let userEmail = document.getElementById('user-email')
@@ -122,6 +124,7 @@ function read() {
     userEmail.textContent = list[list.length - 1].email
     userMessage.textContent = list[list.length - 1].message
 }
+
 
 const button = document.getElementById('submitButton')
 button.style.opacity = 0.1
@@ -155,4 +158,4 @@ function checkForm() {
 
 form.forEach((field) => {
     field.addEventListener('input', checkForm)
-  })
+})
