@@ -78,23 +78,7 @@ function clearInputs() {
     document.getElementById('message').value = '';
 }
 
-
 window.onload = read;
-
-function read() {
-    let fullName = document.getElementById('full-name')
-    let userEmail = document.getElementById('user-email')
-    let userMessage = document.getElementById('user-message')
-
-    let firstName = localStorage.getItem('firstName')
-    let lastName = localStorage.getItem('lastName')
-    let email = localStorage.getItem('email')
-    let message = localStorage.getItem('message')
-
-    if (fullName) fullName.textContent = `${firstName} ${lastName}`
-    if (userEmail) userEmail.textContent = email
-    if (userMessage) userMessage.textContent = message
-}
 
 function nameValidator(name) {
     let validator = /^[A-Za-zÀ-ÖØ-öø-ÿ]+$/
@@ -141,4 +125,17 @@ function subscribe() {
             emailError.innerHTML = ''
         },3000)
     }
+}
+
+function read() {
+    let fullName = document.getElementById('full-name');
+    let userEmail = document.getElementById('user-email');
+    let userMessage = document.getElementById('user-message');
+
+    let list = JSON.parse(localStorage.getItem('userList'));
+        
+    fullName.textContent = list[list.length - 1].firstName + ' ' + list[list.length - 1].lastName;
+    userEmail.textContent = list[list.length - 1].email;
+    userMessage.textContent = list[list.length - 1].message;
+   
 }

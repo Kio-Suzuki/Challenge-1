@@ -5,11 +5,10 @@ body {
 
 main {
     width: 78vw;
-    margin: auto;
+    margin: 4em auto;
     position: relative;
     display: flex;
     justify-content: center; 
-    margin-top: 3em;
 }
 
 .main-title {
@@ -61,10 +60,11 @@ main {
 }
 
 .text-style-message {
+    width: 19%;
     position: absolute;
     top: 60%;
     left: 35%;
-    transform: rotate(-20deg) skew(10deg);      
+    transform: rotate(-21deg) skew(10deg);      
 }
 
 .text-style-name p, .text-style-email p, .text-style-message p, .text-style-reward p{

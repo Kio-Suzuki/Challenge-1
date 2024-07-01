@@ -76,6 +76,10 @@ fieldset {
     border: none;
 }
 
+.to-right {
+    align-self: flex-end;
+}
+
 #name-error, #email-error, #message-error {
     font-size: 0.8em;
     color: red;
