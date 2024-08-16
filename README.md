@@ -21,7 +21,10 @@
 
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+  <img src="https://github.com/Kio-Suzuki/Challenge-1/blob/main/assets/images/home.png?raw=true" alt="Image Example" width="500px">
+  <img src="https://github.com/Kio-Suzuki/Challenge-1/blob/main/assets/images/trending.png?raw=true" alt="Image Example" width="500px">
+  <img src="https://github.com/Kio-Suzuki/Challenge-1/blob/main/assets/images/projects.png?raw=true" alt="Image Example" width="500px">
+  <img src="https://github.com/Kio-Suzuki/Challenge-1/blob/main/assets/images/form.png?raw=true" alt="Image Example" width="500px">
 </p>
 
 <h2 id="started">📌 About</h2>
@@ -57,18 +60,6 @@ How to start your project
 npm install
 npm start
 ```
-
-<h2 id="routes">📍 Application Routes</h2>
-
-Here you can list the main routes of your API, and what are their expected request bodies.
-​
-| route               | description                                          
-|----------------------|-----------------------------------------------------
-| <kbd>/</kbd>     | page that list all movies in theaters
-| <kbd>/movie/</kbd>     | page that contains all movie informations
-| <kbd>/favorites</kbd>     | page that contains all user favorites movies
-| <kbd>/*</kbd>     | 404 - Page not found
-
 <h2 id="colab">🤝 Author</h2>
 
 <table>
