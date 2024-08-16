@@ -125,8 +125,7 @@ function read() {
     userMessage.textContent = list[list.length - 1].message
 }
 
-
-const button = document.getElementById('submitButton')
+const button = document.querySelector('#submitButton')
 button.style.opacity = 0.1
 button.disabled = true
 
