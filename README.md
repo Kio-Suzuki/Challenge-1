@@ -3,7 +3,7 @@
 [JavaScript]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
 [CSS3]: https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
-[PROJECT__URL]: https://github.com/Kio-Suzuki/prime-flix
+[PROJECT__URL]: https://github.com/Kio-Suzuki/Challenge-1
 
 <h1 align="center" style="font-weight: bold;">Game Store 🎮</h1>
 
