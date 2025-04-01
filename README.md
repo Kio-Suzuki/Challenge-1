@@ -13,9 +13,8 @@
 
 <p align="center">
  <a href="#about">About</a> • 
- <a href="#started">Getting Started</a> • 
-  <a href="#started">App Routes</a> • 
-  <a href="#colab">Collaborators</a> •
+ <a href="#started">Getting Started</a> •
+ <a href="#author">Author</a> •
  <a href="#contribute">Contribute</a>
 </p>
 
@@ -60,7 +59,7 @@ How to start your project
 npm install
 npm start
 ```
-<h2 id="colab">🤝 Author</h2>
+<h2 id="author">🤝 Author</h2>
 
 <table>
   <tr>
