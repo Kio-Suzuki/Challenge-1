@@ -365,7 +365,7 @@
         loop();
   
       };
-      invaderAsset.src = "/assets/images/enemy2.png";
+      invaderAsset.src = "../assets/images/enemy2.png";
   
     });
   
