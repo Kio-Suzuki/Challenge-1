@@ -26,7 +26,7 @@
   <img src="https://github.com/Kio-Suzuki/Challenge-1/blob/main/assets/images/form.png?raw=true" alt="Image Example" width="500px">
 </p>
 
-<h2 id="started">📌 About</h2>
+<h2 id="about">📌 About</h2>
 
 Game Store
 
